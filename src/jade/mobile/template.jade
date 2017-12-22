@@ -1,0 +1,23 @@
+include ../components/mixins
+doctype html
+block page
+  html
+    head
+      title Tele2
+      //- include parts/favicon
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      link(href="../build/css/main.css", rel="stylesheet")
+      script(src="../build/js/vendor/jquery-3.2.1.min.js")
+      script(src="../build/img/svg/sprite.js")
+    body
+      .svg-placeholder.hidden
+      script
+        | $('.svg-placeholder').html(SVG_SPRITE);
+      .layout.layout--mobile(class="layout--#{layout}")
+        include ../parts/header
+        block content
+      //-  include parts/footer
+      
+      script(src="../build/js/vendor/share.js")
+      script(src="../build/js/main.js")

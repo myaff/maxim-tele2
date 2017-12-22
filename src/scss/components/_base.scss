@@ -1,0 +1,105 @@
+html, body, div, header, footer, section, article {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html, body {
+  font: #{$font-size--base} / #{$line-height--base} $font--base;
+  color: $color--base;
+  background: $body-bg;
+  @media #{$xs} {
+    background: $body-bg--mobile;
+  }
+}
+
+body {
+  overflow: hidden;
+}
+
+.layout {
+  width: 100vw;
+  .no-touch & {
+    padding-right: $scroll-width;
+  }
+  .no-touch &--home,
+  .no-touch &--test {
+    padding-right: 0;
+  }
+}
+
+.page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  @include size(100%);
+  min-height: 100vh;
+  
+  &__img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+    
+    img {
+      @include max-size(90%);
+    }
+  }
+  &__content {
+    @include size(50%, 100vh);
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $color--primary;
+    padding: $header-height 70px 5vh;
+  }
+  &--test &__content {
+    align-items: flex-start;
+    .section {
+      margin-top: 0;
+    }
+  }
+}
+
+.container {
+  @include center-block;
+  width: 100%;
+  max-width: 71.75rem;
+  padding: 0 $grid-gutter;
+  
+  @media #{$flow-height} {
+    max-width: 130vh;
+  }
+  
+  @media #{$md-landing} {
+    padding: 0 2.2vw;
+  }
+  .layout--mobile & {
+    padding: 0 1.25rem;
+  }
+}
+.section {
+  margin: auto 0;
+  &__title {
+    //max-width: 570px;
+  }
+  &__text,
+  &__content {
+    max-width: 450px;
+  }
+}
+
+.hidden {
+  display: none!important;
+}
+.invisible {
+  visibility: hidden;
+}

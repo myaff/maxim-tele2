@@ -1,0 +1,10 @@
+extends template
+
+prepend page
+  - var layout = 'test';
+  - var currentPage = 'test';
+
+block content
+  .page.page--test
+    .page__img: img(src="build/img/test.png")
+    .page__content Test boy

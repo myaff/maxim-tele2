@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tele2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="build/css/main.css" rel="stylesheet">
+    <script src="build/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="build/js/vendor/mobile.js"></script>
+    <script src="build/img/svg/sprite.js"></script>
+    <meta property="og:description" content="Пройдите наш короткий тест и узнайте, заслужили ли вы преподношения на этот Новый год!">
+  </head>
+  <body>
+    <div class="svg-placeholder hidden"></div>
+    <script>$('.svg-placeholder').html(SVG_SPRITE);</script>
+    <div class="layout layout--desktop layout--test">
+      <!-- header-->
+      <div class="header">
+        <div class="header__content">
+          <div class="header__logo logo__wrapper logo--tele2"><a href="#" target="_blank" class="logo__link">
+              <svg class="logo">
+                <use xlink:href="#tele2">
+              </svg></a></div>
+          <div class="header__logo logo__wrapper logo--maxim"><a href="#" target="_blank" class="logo__link">
+              <svg class="logo">
+                <use xlink:href="#maxim">
+              </svg></a></div>
+        </div>
+      </div>
+      <div class="page page--test">
+        <div class="page__img"><img src="build/img/test.png"></div>
+        <div class="page__content">
+          <div class="section">
+            <div class="section__title tp-heading--huge">Ты была <br/>хорошей <br/>девочкой?</div>
+            <div class="section__test">
+              <form data-test="girl" class="test__form js-test-form">
+                <div class="test js-test-ctrl test--0">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">Неловко это спрашивать, но… <br/>скольким мужчинам ты помогла <br/>выбрать сексапильное белье <br/>для жены/невесты/сестры?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-0-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-0-0" type="radio" name="test-0" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Я не занимаюсь благотворительностью</div>
+                      </label>
+                      <label for="test-0-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-0-1" type="radio" name="test-0" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Трем, включая того парня, который искал <br/>бюст-балконет алого цвета на размер 75 D <br/>для своей тещи</div>
+                      </label>
+                      <label for="test-0-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-0-2" type="radio" name="test-0" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Пффф, сбилась со счета. Кажется, в магазине <br/>женского белья мужчины меня принимают <br/>за продавца-консультанта</div>
+                      </label>
+                      <label for="test-0-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-0-3" type="radio" name="test-0" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Предпочитаю интернет-шопинг</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+                <div class="test js-test-ctrl test--1">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">Ну ладно, скольким подругам <br/>ты помогла выбрать <br/>сексапильное белье?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-1-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-1-0" type="radio" name="test-1" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Одной. Настоящая подруга бывает всего одна.</div>
+                      </label>
+                      <label for="test-1-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-1-1" type="radio" name="test-1" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Не вижу в этом ничего предосудительного. <br/>Обращайтесь, если что.</div>
+                      </label>
+                      <label for="test-1-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-1-2" type="radio" name="test-1" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Ни одной. Считаю, что в этом деле каждый за себя.</div>
+                      </label>
+                      <label for="test-1-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-1-3" type="radio" name="test-1" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Ох, уж эти мужские шуточки про женскую дружбу.</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+                <div class="test js-test-ctrl test--2">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">Ты первой посмотрела <br/>последнюю серию любимого сериала. <br/>Сколько продержишься без спойлеров?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-2-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-2-0" type="radio" name="test-2" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Ой, спойлерить - это такое удовольствие. <br/>Даже лучше, чем котики.</div>
+                      </label>
+                      <label for="test-2-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-2-1" type="radio" name="test-2" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Минуту. И то, если у меня в этот момент <br/>принудительно отключат Интернет</div>
+                      </label>
+                      <label for="test-2-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-2-2" type="radio" name="test-2" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Буду молчать до последнего. <br/>В этом деле я кремень.</div>
+                      </label>
+                      <label for="test-2-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-2-3" type="radio" name="test-2" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Не смотрю сериалы. Только научпоп на YouTube</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+                <div class="test js-test-ctrl test--3">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">В скольких благотворительных <br/>ярмарках ты приняла участие?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-3-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-3-0" type="radio" name="test-3" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">В качестве продавца или покупателя?</div>
+                      </label>
+                      <label for="test-3-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-3-1" type="radio" name="test-3" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Это мой любимый способ разгрузить гардероб <br/>и заработать десять очков в карму.</div>
+                      </label>
+                      <label for="test-3-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-3-2" type="radio" name="test-3" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Боюсь, ни в одной. Плохо представляю себя <br/>в качестве продавца самодельных шапок и шарлоток.</div>
+                      </label>
+                      <label for="test-3-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-3-3" type="radio" name="test-3" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">В одной, но потратилась как на трех.</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+                <div class="test js-test-ctrl test--4">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">Сестра просит посидеть <br/>с племянниками, <br/>больными ветрянкой. <br/>Твои действия?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-4-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-4-0" type="radio" name="test-4" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Маленькие больные дети! <br/>Как бы отмазаться повежливее?</div>
+                      </label>
+                      <label for="test-4-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-4-1" type="radio" name="test-4" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Что за вопрос? Обожаю племянников!</div>
+                      </label>
+                      <label for="test-4-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-4-2" type="radio" name="test-4" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Я бы с радостью, но я не болела ветрянкой <br/>в детстве и не хочу встретить Новый год <br/>в зеленых пятнышках по всему телу.</div>
+                      </label>
+                      <label for="test-4-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-4-3" type="radio" name="test-4" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Это же сестра, самый близкий человек после бабули! <br/>Конечно, посижу!</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+                <div class="test js-test-ctrl test--5">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">Теперь сестра просит забрать <br/>на пару дней ее кошку <br/>(а вот не надо было соглашаться <br/>посидеть с племянниками!). <br/>Что скажешь?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-5-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-5-0" type="radio" name="test-5" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Ну что делать, мы же сестры.</div>
+                      </label>
+                      <label for="test-5-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-5-1" type="radio" name="test-5" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Это уже слишком. Совесть есть у человека?</div>
+                      </label>
+                      <label for="test-5-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-5-2" type="radio" name="test-5" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Да с радостью! Больше ее детей я люблю <br/>только ее кошку!</div>
+                      </label>
+                      <label for="test-5-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-5-3" type="radio" name="test-5" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Сразу предупреждаю, у меня аллергия на мандарины, <br/>на арахис, на цветение липы, на морепродукты и, да, <br/>на кошек тоже.</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+                <div class="test js-test-ctrl test--6">
+                  <div class="test__question my-5">
+                    <div class="test__question-text tp-heading--large">Ты дашь подруге телефон <br/>своего парикмахера?</div>
+                    <div class="test__variants mt-5">
+                      <label for="test-6-0" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-6-0" type="radio" name="test-6" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Она все равно старше меня на полгода — <br/>пусть хоть прическа у нее будет приличная.</div>
+                      </label>
+                      <label for="test-6-1" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-6-1" type="radio" name="test-6" value="1">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Уже дала.</div>
+                      </label>
+                      <label for="test-6-2" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-6-2" type="radio" name="test-6" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Ни за что! Максим — мой. И время у него <br/>перед праздником расписано по минутам</div>
+                      </label>
+                      <label for="test-6-3" class="test-ctrl mb-3">
+                        <div class="test-ctrl__radio mr-4">
+                          <input id="test-6-3" type="radio" name="test-6" value="0">
+                          <div class="check"></div>
+                        </div>
+                        <div class="test-ctrl__text tp-body--main">Она мне тогда не дала номер своего косметолога — <br/>вот пусть теперь ходит с гнездом на голове. <br/>Тоже мне подруга.</div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="test__btn">
+                    <button class="btn js-test-btn">Далее</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="build/js/vendor/owl.carousel.min.js"></script>
+    <script src="build/js/vendor/share.js"></script>
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tele2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="build/css/main.css" rel="stylesheet">
+    <script src="build/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="build/js/vendor/mobile.js"></script>
+    <script src="build/img/svg/sprite.js"></script>
+    <meta property="og:description" content="Пройдите наш короткий тест и узнайте, заслужили ли вы преподношения на этот Новый год!">
+  </head>
+  <body>
+    <div class="svg-placeholder hidden"></div>
+    <script>$('.svg-placeholder').html(SVG_SPRITE);</script>
+    <div class="layout layout--desktop layout--home">
+      <!-- header-->
+      <div class="header">
+        <div class="header__content">
+          <div class="header__logo logo__wrapper logo--tele2"><a href="#" target="_blank" class="logo__link">
+              <svg class="logo">
+                <use xlink:href="#tele2">
+              </svg></a></div>
+          <div class="header__logo logo__wrapper logo--maxim"><a href="#" target="_blank" class="logo__link">
+              <svg class="logo">
+                <use xlink:href="#maxim">
+              </svg></a></div>
+        </div>
+      </div>
+      <div class="page page--home">
+        <div class="page__img"><img src="build/img/santa.gif"></div>
+        <div class="page__content">
+          <div class="section">
+            <div class="section__title tp-heading--huge">Чего <br/>ждать <br/>от Санты?</div>
+            <div class="section__text tp-body--main my-6">
+              <p>Грядет неизбежная ежегодная проверка — <br/>совсем скоро Санта-Клаус запряжет свои сани в оленей и поедет раздавать подарки. Но достанутся гостинцы не всем, а только самым хорошим (и Николаю Баскову)!</p>
+              <p><b>Пройди наш короткий тест и узнай, <br/>заслужил ли ты преподношения на этот Новый год!</b></p>
+            </div>
+            <div class="section__buttons"><a href="test-boy.html" class="btn btn--big btn--plain mb-5">
+                <svg class="icon">
+                  <use xlink:href="#male">
+                </svg><span class="text">Плохим мальчиком</span></a><br><a href="test-girl.html" class="btn btn--big btn--plain">
+                <svg class="icon">
+                  <use xlink:href="#female">
+                </svg><span class="text">Хорошей девочкой</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="build/js/vendor/owl.carousel.min.js"></script>
+    <script src="build/js/vendor/share.js"></script>
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

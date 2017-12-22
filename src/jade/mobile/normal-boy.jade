@@ -1,0 +1,10 @@
+extends template
+
+prepend page
+  - var layout = 'test';
+  - var currentPage = 'result';
+
+block content
+  .page.page--result
+    .page__img: img(src="build/img/normal.png")
+    .page__content Normal Boy

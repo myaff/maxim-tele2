@@ -1,0 +1,10 @@
+extends template
+
+prepend page
+  - var layout = 'home';
+  - var currentPage = 'home';
+
+block content
+  .page.page--home
+    .page__img: img(src="build/img/santa.gif")
+    .page__content Home page

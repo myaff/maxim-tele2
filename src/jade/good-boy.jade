@@ -1,0 +1,27 @@
+extends template
+
+prepend page
+  - var layout = 'test';
+  - var currentPage = 'result';
+
+append head
+  meta(property="og:site_name" content="Неплохо, неплохо.")
+  meta(property="og:title" content="Неплохо, неплохо.")
+  meta(property="og:image" content="https://olga-grabko.pro/case/tele2-test/build/img/sharing_900x471_good-bad.jpg")
+
+block content
+  .page.page--result
+    .page__img: img(src="build/img/normal.png")
+    .page__content
+      .section
+        .section__title.tp-heading--huge Неплохо, <br/>неплохо.
+        .section__content.mt-3
+          .result.mb-7
+            .result__title.tp-heading--large
+              span.text Результат: 
+              span.score 
+              span.text из 
+              span.total= testBoys.length
+            .result__text.tp-body--main.my-5: p Ты, конечно, не мать Тереза (и уж точно не отец!), но на что-то от старика Клауса рассчитывать можешь. Хотя какая разница, ведь Tele2 не Санта, им все равно - вел ты себя плохо или хорошо. <br/><b>У них другие правила! В этот Новый год Tele2 дарит всем желающим полгода связи в подарок при оплате 6 месяцев на тарифе «Мой онлайн+».</b>
+            a.btn.mt-3(href=resultsBoys.normal.link) Подробнее
+          +social(false, true, false, 'Неплохо, неплохо.')

@@ -1,0 +1,34 @@
+.header {
+  @include absolute(top 0 left 0);
+  @include size(100%, $header-height);
+  padding: 1.25rem 50px;
+  z-index: $z-index--header;
+  
+  background: $header-bg;
+  color: $header-color;
+  
+  .layout--mobile & {
+    position: fixed;
+    z-index: 100;
+    padding: 1.25rem;
+    height: 110px;
+    transition: background .3s;
+    &.scrolled {
+      background: #fff;
+    }
+  }
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__logo {
+    @include size(7.5rem, 2.5rem);
+    .logo {
+      @include size(7.5rem, 2.5rem);
+    }
+  }
+}

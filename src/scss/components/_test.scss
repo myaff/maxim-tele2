@@ -1,0 +1,35 @@
+.test-ctrl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  &__radio {
+    @include circle(27px);
+    padding: 7px;
+    border: 2px solid currentColor;
+    flex: 0 0 27px;
+    
+    .check {
+      @include circle(100%);
+      background: transparent;
+    }
+    input {
+      display: none;
+    }
+    input:checked ~ .check {
+      background: currentColor;
+    }
+  }
+  
+}
+
+.test {
+  display: none;
+  &__btn {
+    display: none;
+  }
+  
+  &--0 {
+    display: block;
+  }
+}

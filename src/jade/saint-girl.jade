@@ -5,8 +5,8 @@ prepend page
   - var currentPage = 'result';
 
 append head
-  meta(property="og:site_name" content="Невероятно! Ты — чистейший образец доброты и заботы!")
-  meta(property="og:title" content="Невероятно! Ты — чистейший образец доброты и заботы!")
+  meta(property="og:site_name" content="Невероятно!")
+  meta(property="og:title" content="Невероятно!")
   meta(property="og:image" content="https://olga-grabko.pro/case/tele2-test/build/img/sharing_900x471_saint.jpg")
 
 block content
@@ -14,7 +14,7 @@ block content
     .page__img: img(src="build/img/good.png")
     .page__content
       .section
-        .section__title.tp-heading--huge Невероятно! Ты — чистейший образец доброты и заботы!
+        .section__title.tp-heading--huge Невероятно! 
         .section__content.mt-3
           .result.mb-7
             .result__title.tp-heading--large
@@ -22,6 +22,6 @@ block content
               span.score
               span.text из 
               span.total= testGirls.length
-            .result__text.tp-body--main.my-5: p Можно на тебе жениться? Нет? Но почему? Ты уже замужем? Ладно, проехали. Знаешь, Tele2 все равно - вела ты себя плохо или хорошо, это не Санта. <br/><b>У них другие правила! В этот Новый год Tele2 дарит всем желающим полгода связи в подарок при оплате 6 месяцев на тарифе «Мой онлайн+».</b>
+            .result__text.tp-body--main.my-5: p Ты — чистейший образец доброты и заботы! Можно на тебе жениться? Нет? Но почему? Ты уже замужем? Ладно, проехали. Знаешь, Tele2 все равно - вела ты себя плохо или хорошо, это не Санта. У них другие правила! В этот Новый год Tele2 дарит всем желающим полгода связи в подарок при оплате 6&nbsp;месяцев на тарифе «Мой&nbsp;онлайн+».
             a.btn.mt-3(href=resultsGirls.good.link) Подробнее
-          +social(false, true, true, 'Невероятно! Ты — чистейший образец доброты и заботы!')
+          +social(false, true, true, 'Невероятно!')

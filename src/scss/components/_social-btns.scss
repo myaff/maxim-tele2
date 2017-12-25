@@ -78,8 +78,9 @@
     text-align: left;
     margin: 0 auto 1.5rem;
     
-    @media #{$xs} {
-      font-size: 3.5vw;
+    .layout--mobile & {
+      font-size: 18px;
+      margin-bottom: 0.5rem;
     }
   }
   &--inline &__title {

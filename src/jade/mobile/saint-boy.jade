@@ -1,0 +1,28 @@
+extends template
+
+prepend page
+  - var layout = 'test';
+  - var currentPage = 'result';
+
+append head
+  meta(property="og:site_name" content="Ого! Да ты святой!")
+  meta(property="og:title" content="Ого! Да ты святой!")
+  meta(property="og:image" content="https://olga-grabko.pro/case/tele2-test/build/img/sharing_900x471_saint.jpg")
+
+block content
+  .page.page--result
+    .page__img: img(src="../build/img/saint_m.png")
+    .page__content
+      .section
+        .section__title.tp-heading--huge Ого! Да&nbsp;ты святой!
+        .section__content.mt-3
+          .result.mb-7
+            .result__title.tp-heading--large
+              span.text Результат: 
+              br
+              span.score
+              span.text из 
+              span.total= testBoys.length
+            .result__text.tp-body--main.my-4: p Таких больше не делают: говорят, последнего святого не стало еще в позапрошлом веке. Но&nbsp;мы, кажется, нашли в твоем лице ему замену — ты такой хороший, что у Санты на тебя подарков не хватит! Но Tele2 не Санта, у них другие правила, подарков хватит на всех. В этот Новый год Tele2 дарит всем желающим полгода связи в подарок при оплате 6&nbsp;месяцев на тарифе «Мой&nbsp;онлайн+».
+            a.btn.mt-3(href=resultsBoys.good.link) Подробнее
+          +social(false, true, true, 'Ого! Да ты святой!')

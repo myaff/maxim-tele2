@@ -1,6 +1,6 @@
 let DeviceDetection = require("./components/device-detection");
 let Togglers = require("./components/togglers");
-let Carousel = require("./components/carousel");
+//let Carousel = require("./components/carousel");
 //let Modal = require("./components/modal");
 //let Anchor = require("./components/anchor");
 //let Input = require("./components/input");
@@ -13,7 +13,7 @@ $(document).ready(function(){
   
   DeviceDetection.run();
   Togglers.init();
-  Carousel.init();
+  //Carousel.init();
   //Modal.init();
   //Anchor.init();
   //Input.init();
@@ -43,7 +43,7 @@ function getCookie(name) {
 module.exports = {
   DeviceDetection,
   Togglers,
-  Carousel,
+  //Carousel,
   //Modal,
   //Anchor,
   //Input,

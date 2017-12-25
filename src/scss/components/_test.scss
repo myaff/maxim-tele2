@@ -1,23 +1,48 @@
 .test-ctrl {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
+  position: relative;
+  display: block;
+  .layout--desktop & {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .layout--mobile & {
+    margin: 0 -10px;
+    padding: 1rem 10px;
+    border-top: 1px solid $color--secondary;
+    border-bottom: 1px solid $color--secondary;
+  }
   &__radio {
-    @include circle(27px);
-    padding: 7px;
-    border: 2px solid currentColor;
-    flex: 0 0 27px;
-    
-    .check {
-      @include circle(100%);
-      background: transparent;
-    }
     input {
       display: none;
     }
-    input:checked ~ .check {
-      background: currentColor;
+    .layout--desktop & {
+      @include circle(27px);
+      padding: 7px;
+      border: 2px solid currentColor;
+      flex: 0 0 27px;
+      
+      .check {
+        @include circle(100%);
+        background: transparent;
+      }
+      input:checked ~ .check {
+        background: currentColor;
+      }
+    }
+    .layout--mobile & {
+      @include absolute(top 0 left 0);
+      @include size(100%);
+      
+      
+      .check {
+        @include size(100%);
+        background: transparent;
+      }
+      input:checked ~ .check {
+        background: $color--secondary;
+      }
     }
   }
   
@@ -25,11 +50,28 @@
 
 .test {
   display: none;
+  
+  &__question-text {
+    .layout--mobile & {
+      font-size: 20px;
+    }
+  }
   &__btn {
     display: none;
+    
+    .layout--mobile & {
+      text-align: center;
+    }
   }
   
   &--0 {
     display: block;
+  }
+  
+  &__variants {
+    .layout--mobile & {
+      border-top: 1px solid $color--secondary;
+      border-bottom: 1px solid $color--secondary;
+    }
   }
 }

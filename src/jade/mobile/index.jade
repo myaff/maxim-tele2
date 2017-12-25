@@ -6,5 +6,18 @@ prepend page
 
 block content
   .page.page--home
-    .page__img: img(src="build/img/santa.gif")
-    .page__content Home page
+    .page__img: img(src="../build/img/santa_m.png")
+    .page__content
+      .section
+        .section__title.tp-heading--huge Чего ждать <br/>от Санты?
+        .section__text.tp-body--main.mt-3.mb-5
+          p Грядет неизбежная ежегодная проверка — <br/>совсем скоро Санта-Клаус запряжет свои сани в&nbsp;оленей и&nbsp;поедет раздавать подарки. Но&nbsp;достанутся гостинцы не&nbsp;всем, а&nbsp;только самым&nbsp;хорошим (и&nbsp;Николаю&nbsp;Баскову)!
+          p Пройди наш короткий тест и&nbsp;узнай, заслужил ли ты преподношения на&nbsp;этот Новый&nbsp;год!
+        .section__buttons
+          a.btn.btn--big.btn--plain.mb-3.ml-4(href="test-boy.html")
+            svg.icon.mr-2: use(xlink:href="#male")/
+            span.text Плохим мальчиком
+          br
+          a.btn.btn--big.btn--plain.mb-3.ml-4(href="test-girl.html")
+            svg.icon.mr-2: use(xlink:href="#female")/
+            span.text Хорошей девочкой

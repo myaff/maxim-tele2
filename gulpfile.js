@@ -227,6 +227,8 @@ gulp.task('webserver', function(){
     });
 
     //browserSync.watch(path.watch.html).on('change', browserSync.reload);
+    browserSync.watch(path.watch.css).on('change', browserSync.reload);
+    browserSync.watch(path.watch.jade).on('change', browserSync.reload);
 });
 
 gulp.task('watch', function(){

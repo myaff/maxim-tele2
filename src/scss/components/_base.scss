@@ -21,6 +21,14 @@ html, body {
 
 body {
   overflow: hidden;
+  @media #{$xs} {
+    overflow-y: auto;
+  }
+  @media #{$sm} {
+    .touch & {
+      overflow-y: auto;
+    }
+  }
 }
 
 .layout {
@@ -35,13 +43,15 @@ body {
 }
 
 .page {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  @include size(100%);
-  min-height: 100vh;
+  .layout--desktop & {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    @include size(100%);
+    min-height: 100vh;
+  }
   
-  &__img {
+  .layout--desktop &__img {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -52,20 +62,38 @@ body {
       @include max-size(90%);
     }
   }
+  .layout--mobile &__img {
+    margin-bottom: -1px;
+    img {
+      display: block;
+      @include size(100%, auto);
+    }
+  }
   &__content {
+    background: $color--primary;
+  }
+  .layout--desktop &__content {
     @include size(50%, 100vh);
     overflow-y: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: $color--primary;
     padding: $header-height 70px 5vh;
   }
-  &--test &__content {
+  .layout--mobile &__content {
+    padding: 20px 10px 40px;
+  }
+  .layout--desktop &--test &__content {
     align-items: flex-start;
     .section {
       margin-top: 0;
     }
+  }
+  .layout--mobile &--test .tp-heading--huge {
+    font-size: $font-size--large;
+  }
+  .layout--mobile &--test &__content {
+    padding: 20px 10px;
   }
 }
 
@@ -91,8 +119,8 @@ body {
   &__title {
     //max-width: 570px;
   }
-  &__text,
-  &__content {
+  .layout--desktop &__text,
+  .layout--desktop &__content {
     max-width: 450px;
   }
 }

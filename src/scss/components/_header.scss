@@ -8,10 +8,10 @@
   color: $header-color;
   
   .layout--mobile & {
-    position: fixed;
+    position: relative;
     z-index: 100;
-    padding: 1.25rem;
-    height: 110px;
+    padding: 10px;
+    height: $header-height--mobile;
     transition: background .3s;
     &.scrolled {
       background: #fff;

@@ -4,7 +4,25 @@ prepend page
   - var layout = 'test';
   - var currentPage = 'result';
 
+append head
+  meta(property="og:site_name" content="Результат скромный")
+  meta(property="og:title" content="Результат скромный")
+  meta(property="og:image" content="https://olga-grabko.pro/case/tele2-test/build/img/sharing_900x471_good-bad.jpg")
+
 block content
   .page.page--result
-    .page__img: img(src="build/img/good.png")
-    .page__content Good girl
+    .page__img: img(src="../build/img/good-bad_m.png")
+    .page__content
+      .section
+        .section__title.tp-heading--huge Результат скромный
+        .section__content.mt-3
+          .result.mb-7
+            .result__title.tp-heading--large
+              span.text Результат: 
+              br
+              span.score
+              span.text из 
+              span.total= testGirls.length
+            .result__text.tp-body--main.my-5: p А скромность девушку украшает. Поэтому в этом году, кроме подарков от бойфренда или мужа (или сразу обоих) можешь рассчитывать на презент! Поскольку Tele2 на самом деле все равно вела ты себя плохо или хорошо. У них другие правила! В этот Новый год Tele2 дарит всем желающим полгода связи в подарок при оплате 6&nbsp;месяцев на тарифе «Мой&nbsp;онлайн+».
+            a.btn.mt-3(href=resultsGirls.normal.link) Подробнее
+          +social(false, true, false, 'Результат скромный')

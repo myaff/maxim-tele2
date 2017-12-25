@@ -6,5 +6,22 @@ prepend page
 
 block content
   .page.page--test
-    .page__img: img(src="build/img/test.png")
-    .page__content Test boy
+    .page__img: img(src="../build/img/test_m.png")
+    .page__content
+      .section
+        .section__title.tp-heading--huge Ты был плохим мальчиком?
+        .section__test
+          form.test__form.js-test-form(data-test="boy")
+            each item, index in testBoysM
+              .test.js-test-ctrl(class="test--#{index}")
+                .test__question.my-4
+                  .test__question-text.tp-heading--large !{item.question}
+                  .test__variants.mt-5
+                    each variant, i in item.variants
+                      label.test-ctrl(for="test-#{index}-#{i}")
+                        .test-ctrl__radio
+                          input(id="test-#{index}-#{i}" type="radio" name="test-#{index}" value=variant.score)
+                          .check
+                        .test-ctrl__text.tp-body--base !{variant.text}
+                .test__btn
+                  button.btn.js-test-btn Далее

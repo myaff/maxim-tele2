@@ -45,6 +45,9 @@ $btn-plain-bg--hover: $btn-plain-bg;
       font-size: $font-size--main/1080px*100vh;
     }
   }
+  .layout--mobile & {
+    font-size: 18px;
+  }
   
   &:hover,
   &:focus,
@@ -68,11 +71,17 @@ $btn-plain-bg--hover: $btn-plain-bg;
       font-size: 2em;
     }
     
-  .layout--desktop & {
-    @media #{$flow-height} {
-      font-size: $font-size--large/1080px*100vh;
+    .layout--desktop & {
+      @media #{$flow-height} {
+        font-size: $font-size--large/1080px*100vh;
+      }
     }
-  }
+    .layout--mobile & {
+      font-size: $font-size--large;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
   &--plain {
@@ -81,7 +90,13 @@ $btn-plain-bg--hover: $btn-plain-bg;
     border-color: transparent;
     
     .text {
-      border-bottom: 2px solid $btn-plain-border-color;
+      .layout--desktop & {
+        border-bottom: 2px solid $btn-plain-border-color;
+      }
+      
+      .layout--mobile & {
+        text-decoration: underline;
+      }
     }
     
     &:hover,

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tele2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <link href="../build/css/main.css" rel="stylesheet">
+    <script src="../build/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="../build/img/svg/sprite.js"></script>
+  </head>
+  <body>
+    <div class="svg-placeholder hidden"></div>
+    <script>$('.svg-placeholder').html(SVG_SPRITE);</script>
+    <div class="layout layout--mobile layout--home">
+      <!-- header-->
+      <div class="header">
+        <div class="header__content">
+          <div class="header__logo logo__wrapper logo--tele2"><a href="https://msk.tele2.ru/promo/podarok?utm_source=MaximWN&amp;utm_medium=SP&amp;utm_content=Tele2_SP_MaximWN_DecJan&amp;utm_campaign=Tele2_SP_MaximWN_DecJan&amp;utm_term" target="_blank" class="logo__link">
+              <svg class="logo">
+                <use xlink:href="#tele2">
+              </svg></a></div>
+          <div class="header__logo logo__wrapper logo--maxim"><a href="http://www.maximonline.ru/" target="_blank" class="logo__link">
+              <svg class="logo">
+                <use xlink:href="#maxim">
+              </svg></a></div>
+        </div>
+      </div>
+      <div class="page page--home">
+        <div class="page__img"><img src="../build/img/santa_m.png"></div>
+        <div class="page__content">
+          <div class="section">
+            <div class="section__title tp-heading--huge">Чего ждать <br/>от Санты?</div>
+            <div class="section__text tp-body--main mt-3 mb-5">
+              <p>Грядет неизбежная ежегодная проверка — <br/>совсем скоро Санта-Клаус запряжет свои сани в&nbsp;оленей и&nbsp;поедет раздавать подарки. Но&nbsp;достанутся гостинцы не&nbsp;всем, а&nbsp;только самым&nbsp;хорошим (и&nbsp;Николаю&nbsp;Баскову)!</p>
+              <p>Пройди наш короткий тест и&nbsp;узнай, заслужил ли ты преподношения на&nbsp;этот Новый&nbsp;год!</p>
+            </div>
+            <div class="section__buttons"><a href="test-boy.html" class="btn btn--big btn--plain mb-3 ml-4">
+                <svg class="icon mr-2">
+                  <use xlink:href="#male">
+                </svg><span class="text">Плохим мальчиком</span></a><br><a href="test-girl.html" class="btn btn--big btn--plain mb-3 ml-4">
+                <svg class="icon mr-2">
+                  <use xlink:href="#female">
+                </svg><span class="text">Хорошей девочкой</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../build/js/vendor/share.js"></script>
+    <script src="../build/js/main.js"></script>
+  </body>
+</html>

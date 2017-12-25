@@ -25,7 +25,7 @@ a {
       }
     }
     .layout--mobile & {
-      font-size: 50px;
+      font-size: 44px;
     }
     
   }
@@ -92,6 +92,7 @@ a {
   }
   &--base {
     font-size: $font-size--base;
+    letter-spacing: 0.02em;
     
     .layout--desktop & {
       @media #{$flow-height} {

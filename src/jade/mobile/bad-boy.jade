@@ -4,7 +4,24 @@ prepend page
   - var layout = 'test';
   - var currentPage = 'result';
 
+append head
+  meta(property="og:site_name" content="Все очень плохо.")
+  meta(property="og:title" content="Все очень плохо.")
+  meta(property="og:image" content="https://olga-grabko.pro/case/tele2-test/build/img/sharing_900x471_good-bad.jpg")
 block content
   .page.page--result
-    .page__img: img(src="build/img/bad.png")
-    .page__content Bad boy
+    .page__img: img(src="../build/img/good-bad_m.png")
+    .page__content
+      .section
+        .section__title.tp-heading--huge Все очень <br/>плохо
+        .section__content.mt-3
+          .result.mb-7
+            .result__title.tp-heading--large
+              span.text Результат: 
+              br
+              span.score
+              span.text из 
+              span.total= testBoys.length
+            .result__text.tp-body--main.my-5: p Любимчиком Санты тебе уже&nbsp;не&nbsp;стать. У тебя времени всего&#8209;ничего, чтобы хоть как&#8209;то исправить ситуацию. А впрочем, зачем? Ведь Tele2 не Санта, им все равно - вел ты себя плохо или хорошо. У них другие правила! В этот Новый год Tele2 дарит всем желающим полгода связи в подарок при оплате 6 месяцев на тарифе «Мой&nbsp;онлайн+».
+            a.btn.mt-3(href=resultsBoys.bad.link) Подробнее
+          +social(false, true, false, 'Все очень плохо.')

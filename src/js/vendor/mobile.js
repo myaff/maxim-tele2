@@ -10,10 +10,11 @@ function isMobile() {
 
 if(isMobile() === true) {
     let hash = window.location.hash;
-
+    let baseUrl = window.location.href.split('/').slice(0,-1).join('/');
+    let pageUrl = window.location.href.split('/').splice(-1,1).join('/');
+    let finalUrl = baseUrl + '/mobile/' + pageUrl;
     if (hash) {
-        window.location  = '/mobile'+hash;
-    } else {
-        window.location  = '/mobile';
+      finalUrl += hash;
     }
+    window.location.href = finalUrl;
 }
